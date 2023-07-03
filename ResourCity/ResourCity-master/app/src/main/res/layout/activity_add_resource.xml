@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/titleResourceText_a"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/white_border"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.08" >
+
+        <EditText
+            android:id="@+id/title_resource_txt_a"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:gravity="bottom|center_vertical|center_horizontal"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:fontFamily="casual"
+            tools:hint="Title" />
+
+        <ImageView
+            android:id="@+id/prof_img_resource_a"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/profile24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_a"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/my_margin"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/progress_bar_a"
+        app:layout_constraintTop_toBottomOf="@+id/titleResourceText_a"
+        android:background="@drawable/white_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.08" >
+
+        <ImageView
+            android:id="@+id/iconFilterCategoryImg_a"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:adjustViewBounds="false"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/filter" />
+
+        <Spinner
+            android:id="@+id/filterSpinner_a"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icon_height"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="casual"
+            android:background="@drawable/orange_dark_btn"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_a"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/orange_soft_btn"
+        android:indeterminate="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_a"
+        tools:visibility="visible" />
+
+    <!--IMAGES-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/resource_picture_frame_a"
+        android:layout_width="match_parent"
+        android:layout_height="393dp"
+        android:layout_marginTop="132dp"
+        android:background="@color/colorGrey"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".MainActivity">
+
+        <!--next-->
+        <ImageButton
+            android:id="@+id/nextImgBtn_a"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:srcCompat="@drawable/forward36" />
+
+        <!--prev-->
+        <ImageButton
+            android:id="@+id/prevImgBtn_a"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:srcCompat="@drawable/backward36" />
+
+        <!--image-->
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/FrameLayoutImg_a"
+            android:layout_width="match_parent"
+            android:layout_height="339dp"
+            android:layout_marginLeft="@dimen/my_margin"
+            android:layout_marginRight="@dimen/my_margin"
+            android:foregroundGravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.18"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".85">
+
+
+            <ImageView
+                android:id="@+id/resource_image_view_a"
+                android:layout_width="310dp"
+                android:layout_height="269dp"
+                android:layout_gravity="center_horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.502"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/addResourceImgClck_a"
+                android:layout_width="@dimen/icon_width"
+                android:layout_height="@dimen/icon_height"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/colorOrange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_add_photo36" />
+
+            <ImageView
+                android:id="@+id/removePictureImgClck_a"
+                android:layout_width="@dimen/icon_width"
+                android:layout_height="@dimen/icon_height"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/delete_36dp" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/resource_idea_fragment_a"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/my_margin"
+        android:layout_marginTop="@dimen/my_margin"
+        android:background="@drawable/orange_soft_btn"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/addResourceBtn_a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resource_picture_frame_a"
+        app:layout_constraintVertical_bias="0.444">
+
+        <TextView
+            android:id="@+id/addNoteText_a"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="9"
+            android:gravity="bottom|center_vertical|center_horizontal"
+            android:text="Attach new note to this resource: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="casual" />
+
+        <ImageView
+            android:id="@+id/add_note_img_a"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            app:srcCompat="@drawable/ic_upload_note" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addResourceBtn_a"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/orange_dark_btn"
+        android:text="Add Resource"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.08"
+        android:fontFamily="casual"
+        android:textStyle="bold"/>
+
+</android.support.constraint.ConstraintLayout>
+
+    <!--ResourcePictureFragment-->
+    <!--<fragment-->
+    <!--android:id="@+id/resource_picture_fragment"-->
+    <!--android:name="com.example.naama.resourcity.ResourcePictureFragment"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHeight_default="percent"-->
+    <!--app:layout_constraintHeight_percent=".58"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintVertical_bias="0.0"-->
+    <!--tools:context=".MainActivity" />-->

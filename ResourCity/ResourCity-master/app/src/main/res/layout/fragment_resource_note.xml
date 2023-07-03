@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_gravity="center">
+
+    <!--TITLE-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:id="@+id/note_title_layout"
+        android:layout_marginBottom="@dimen/my_margin"
+        android:layout_marginTop="@dimen/my_margin">
+        <TextView
+            android:id="@+id/note_title_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:hint="Note Title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    m
+        <ImageView
+            android:id="@+id/add_note_img"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_upload_note"
+            android:background="@drawable/orange_soft_btn"/>
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/contect_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/my_margin"
+        app:layout_constraintTop_toBottomOf="@+id/note_title_layout">
+
+        <ImageButton
+            android:id="@+id/prevImgBtn_va"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backward36" />
+
+        <!--DESCRIPTION-->
+        <EditText
+            android:id="@+id/note_desc_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:hint="Note's Description"
+            android:inputType="textMultiLine"
+            android:textAlignment="viewStart"
+            android:gravity="start"
+            app:layout_constraintEnd_toStartOf="@+id/note_image_view_container"
+            app:layout_constraintStart_toEndOf="@+id/prevImgBtn_va"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".35"
+            android:scrollbarAlwaysDrawVerticalTrack="true"/>
+
+        <!--PICTURE AND ADD PICTURE BUTTON-->
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/note_image_view_container"
+            app:layout_constraintEnd_toStartOf="@+id/nextImgBtn_va"
+            app:layout_constraintStart_toEndOf="@+id/note_desc_text_view"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".35">
+
+            <ImageView
+                android:id="@+id/note_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/ic_image_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <ImageButton
+            android:id="@+id/nextImgBtn_va"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/note_image_view_container"
+            app:srcCompat="@drawable/forward36" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!--DOWN BOTTONS OF LIKES?-->
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginBottom="@dimen/my_margin"
+        android:layout_marginLeft="@dimen/my_margin"
+        android:layout_marginRight="@dimen/my_margin"
+        android:layout_marginTop="@dimen/my_margin"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contect_linear_layout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+        android:id="@+id/likes_number_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:layout_marginRight="@dimen/my_margin"
+        android:textColor="#A0DDA0"
+        android:text="0" />
+
+        <ImageView
+        android:id="@+id/like_icon"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        app:srcCompat="@drawable/like_green" />
+
+        <TextView
+        android:id="@+id/dislikes_number_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:layout_marginRight="@dimen/my_margin"
+        android:textColor="#CC0000"
+        android:layout_marginLeft="10dp"
+        android:text="0" />
+
+        <ImageView
+        android:id="@+id/dislike_icon"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        app:srcCompat="@drawable/dislike_red" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.constraint.ConstraintLayout>

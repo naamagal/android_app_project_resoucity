@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.resourcity.naama.resourcity"
+    android:versionCode="2"
+    android:versionName="2.0">
+
+    // because we check if it is connected to internet, Must.
+    <uses-permission android:name="android.permission.INTERNET" />
+    // to see if I can access Google Play Services
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    // No one can actually use this API other than my App itself (based on the signature of the key
+    we create)
+    <permission
+        android:name="com.resourcity.naama.resourcity.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    // USING the permission we just CTREATED
+    <uses-permission android:name="com.resourcity.naama.resourcity.permission.MAPS_RECEIVE" />
+    ;
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    // Reading Google's services
+    <uses-permission android:name="com.google.android.providers.gsf.permissions.READ_GSERVICES" />
+    // we have to add this for gogle maps and for using gallery:
+    <permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        // FIRST ACTIVITY TO RUN!!
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MapActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".AddNoteActivity" />
+        <activity android:name=".InfoActivity" />
+
+        <activity
+            android:name=".ViewResourceActivity"
+            android:label="ViewResourceActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".MapActivity" />-->
+
+        </activity>
+
+        <activity
+            android:name=".AddResourceActivity"
+            android:label="AddResourceActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MapActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyClUoJZTh_nwR5FgNQzZY6eMDakVBpKvbU" />
+    </application>
+
+</manifest>

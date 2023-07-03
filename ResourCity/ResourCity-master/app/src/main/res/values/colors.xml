@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--green 6f751a-->
+    <color name="colorPrimary">#6787b7</color>
+    <color name="colorPrimaryDark">#3d516d</color>
+    <color name="colorGreenLight">#d1e1c6</color>
+    <color name="colorGreen">#7fa266</color>
+    <color name="colorGreenDark">#475a39</color>
+    <color name="colorOrange">#fad081</color>
+    <color name="colorPinkLight">#ffd0d1</color>
+    <!-- e >> a in colorOrange-->
+    <color name="colorOrangeDark">#fdc235</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGrey">#c0c0c0</color>
+    <color name="colorAccent">#ff4081</color>
+
+</resources>

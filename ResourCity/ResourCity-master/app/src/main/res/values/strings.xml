@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">ResourCity</string>
+
+    <string name="camera">CAMERA</string>
+    <string name="gallery">GALLERY</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--&lt;!&ndash; TODO: Remove or change this placeholder text &ndash;&gt;-->
+    <!--<string name="resource_preview_fragment">Preview fragment</string>-->
+
+    <!--<string name="Cloth">CLOTH</string>-->
+    <!--<string name="Trees">TREES</string>-->
+    <!--<string name="Herbs">HERBS</string>-->
+    <!--<string name="Wood">WOOD</string>-->
+    <!--<string name="Metal">METAL</string>-->
+    <!--<string name="Plastic">PLASTIC</string>-->
+
+    <!--FOOD, HERBS, METAL, WOOD, PLASTIC, CLOTHES, FURNITURE-->
+    <string-array name="filterArray">
+        <item>SELECT CATEGORY</item>
+        <item>FOOD</item>
+        <item>HERBS</item>
+        <item>METAL</item>
+        <item>WOOD</item>
+        <item>PLASTIC</item>
+        <item>CLOTHES</item>
+        <item>FURNITURE</item>
+    </string-array>
+
+    <!--TODO: NESTED ARRAY-->
+    <!--<item>-->
+    <!--<string-array name="Raw Material">-->
+    <!--<item>Wood</item>-->
+    <!--<item>Metals</item>-->
+    <!--<item>Plastic</item>-->
+    <!--</string-array>-->
+    <!--</item>-->
+
+</resources>

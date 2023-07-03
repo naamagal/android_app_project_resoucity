@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "181268117288",
+    "firebase_url": "https://resourcity-ca717.firebaseio.com",
+    "project_id": "resourcity-ca717",
+    "storage_bucket": "resourcity-ca717.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181268117288:android:619129ed580b0fb1",
+        "android_client_info": {
+          "package_name": "com.resourcity.naama.resourcity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181268117288-3vms1lm1a5fk069lt78knsrl7d965lvm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.resourcity.naama.resourcity",
+            "certificate_hash": "8790935272f39bc7087840998af4a1dc1afe6d3c"
+          }
+        },
+        {
+          "client_id": "181268117288-9tl2aqge1tf7igneqb34tumccb5692lb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbStHUCotyWEjrmZRmSrCOwQDMjHZfMKY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181268117288-9tl2aqge1tf7igneqb34tumccb5692lb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
