@@ -14,7 +14,7 @@ We want them to be more active, aware to the surroundings: to be able to share, 
 
 ## Main App-Scenario:
 
-![Alt text](/external_files/ResourCity_MainAppScenario.png?raw=true "MainAppScenario")
+![Alt text](/external_files/ResourCity_main_app_scenario.png?raw=true "MainAppScenario")
 
 ## Opptional Users: 
 
